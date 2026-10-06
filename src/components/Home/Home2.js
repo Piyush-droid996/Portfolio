@@ -2,9 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/Passport_Photograph_..jpg";
 import Tilt from "react-parallax-tilt";
-import { AiFillGithub } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
