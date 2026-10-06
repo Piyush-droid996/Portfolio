@@ -8,44 +8,84 @@ function Particle() {
       params={{
         particles: {
           number: {
-            value: 160,
+            value: 55,
             density: {
               enable: true,
-              value_area: 1500,
+              value_area: 1100,
             },
           },
+
+          color: {
+            value: ["#00c8f5", "#38bdf8", "#7dd3fc"],
+          },
+
           line_linked: {
-            enable: false,
-            opacity: 0.03,
+            enable: true,
+            distance: 170,
+            color: "#38bdf8",
+            opacity: 0.28,
+            width: 1,
           },
+
           move: {
-            direction: "right",
-            speed: 0.05,
+            enable: true,
+            direction: "none",
+            random: true,
+            speed: 0.45,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
           },
+
           size: {
-            value: 1,
-          },
-          opacity: {
+            value: 2,
+            random: true,
             anim: {
               enable: true,
               speed: 1,
-              opacity_min: 0.05,
+              size_min: 0.8,
+              sync: false,
             },
           },
-        },
-        interactivity: {
-          events: {
-            onclick: {
+
+          opacity: {
+            value: 0.7,
+            random: true,
+            anim: {
               enable: true,
-              mode: "push",
-            },
-          },
-          modes: {
-            push: {
-              particles_nb: 1,
+              speed: 0.5,
+              opacity_min: 0.25,
+              sync: false,
             },
           },
         },
+
+        interactivity: {
+          detect_on: "canvas",
+
+          events: {
+            onhover: {
+              enable: true,
+              mode: "grab",
+            },
+
+            onclick: {
+              enable: false,
+            },
+
+            resize: true,
+          },
+
+          modes: {
+            grab: {
+              distance: 160,
+              line_linked: {
+                opacity: 0.45,
+              },
+            },
+          },
+        },
+
         retina_detect: true,
       }}
     />
@@ -53,16 +93,3 @@ function Particle() {
 }
 
 export default Particle;
-
-
-
-
-
-
-
-
-
-
-
-
-
