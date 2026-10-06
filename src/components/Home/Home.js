@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import homeLogo from "../../Assets/Home-main.png";
+import homeLogo from "../../Assets/piyush-3d.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
