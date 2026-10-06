@@ -1,31 +1,50 @@
-.tech-icon-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Center align icons and text */
-    position: relative;
-    transition: background-color 0.3s ease;
-    padding: 10px;
-    border-radius: 8px; /* Rounded corners */
-    text-align: center; /* Center text */
-}
-  
 .tech-icons {
-    position: relative;
-    margin: 10px;
+  position: relative;
+  margin: 10px;
 }
-  
-.tech-icon-container:hover {
-    background: linear-gradient(45deg, #8dbde4, #b8a1a9); /* Gradient on hover */
+
+.tech-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+  padding: 20px 12px;
+  border: 1px solid #16324a;
+  border-radius: 8px;
+  background: rgba(10, 22, 37, 0.65);
+  text-align: center;
+  transition: all 0.25s ease;
 }
-  
+
+.tech-icon-container svg {
+  width: 52px;
+  height: 52px;
+  color: #38bdf8;
+  transition: all 0.25s ease;
+}
+
 .tech-label {
-    margin-top: 8px; /* Space between icon and text */
-    font-size: 1rem;
-    color: #333; /* Default text color */
-    transition: color 0.3s ease; /* Smooth color transition */
+  margin: 12px 0 0;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.4;
+  transition: color 0.25s ease;
 }
-  
+
+.tech-icon-container:hover {
+  border-color: rgba(0, 200, 245, 0.55);
+  background: rgba(13, 27, 42, 0.9);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 200, 245, 0.08);
+}
+
+.tech-icon-container:hover svg {
+  color: #00c8f5;
+  filter: drop-shadow(0 0 8px rgba(0, 200, 245, 0.25));
+}
+
 .tech-icon-container:hover .tech-label {
-    color: white; /* Change text color on hover */
+  color: #f8fafc;
 }

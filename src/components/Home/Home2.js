@@ -9,80 +9,45 @@ function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
-        <Row>
+        <Row className="align-items-center">
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+            <h1>
+              LET ME <span className="home-highlight">INTRODUCE</span> MYSELF
             </h1>
+
             <p className="home-about-body">
-              Greetings! Delighted to have you visit my profile 😊.
+              Hi, I'm <span className="home-highlight">Piyush Saxena</span>, a Software Engineer focused on building reliable backend applications.
               <br />
-              I'm passionate about pushing the boundaries of technology. Always
-              hungry for new challenges and eager to expand my skill set.
-              <br />
-              <br />
-              <i>
-                <b className="purple">
-                  {" "}
-                  As a dedicated B.Tech Computer Science student at Jaipur
-                  National University, I've immersed myself in the world of
-                  frontend development through internships. Armed with expertise
-                  in C/C++ and adeptness in HTML, CSS, Bootstrap, JavaScript,
-                  and React.js,{" "}
-                </b>
-              </i>
+              <br />I work primarily with <span className="home-highlight">Java, Spring Boot, REST APIs, SQL, and Microservices</span>
+              . I enjoy solving backend problems, developing APIs, debugging production issues, and improving application reliability.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b>
-              </i>
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              My experience includes working on <span className="home-highlight">enterprise applications</span> and building full-stack projects using
+              Java, Spring Boot, React, and MySQL.
+              <br />
+              <br />
+              I'm continuously improving my skills in <span className="home-highlight">backend development, system design, and problem solving</span>.
             </p>
           </Col>
-          <Col
-            md={4}
-            className="myAvtar"
-            style={{ textAlign: "center", marginTop: "20px", height:"50vh" }}
-          >
-            <Tilt
-              style={{
-                borderRadius: "10px",
-                boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
-              }}
-            >
-              <img
-                src={myImg}
-                className="img-fluid"
-                alt="avatar"
-                style={{ maxWidth: "100%", borderRadius: "10px" }}
-              />
+
+          <Col md={4} className="myAvtar">
+            <Tilt className="home-profile-frame">
+              <img src={myImg} className="img-fluid" alt="Piyush Saxena" />
             </Tilt>
           </Col>
         </Row>
-        <Row>
+
+        {/* <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
+
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="home-highlight">connect</span> with me
             </p>
+
             <ul className="home-about-social-links">
               <li className="social-icons">
-                <a
-                  href="https://github.com/Piyush-droid996"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
+                <a href="https://github.com/Piyush-droid996" target="_blank" rel="noreferrer" className="home-social-icons" aria-label="GitHub">
                   <AiFillGithub />
                 </a>
               </li>
@@ -92,16 +57,18 @@ function Home2() {
                   href="https://www.linkedin.com/in/piyush--saxena/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="home-social-icons"
+                  aria-label="LinkedIn"
                 >
                   <FaLinkedinIn />
                 </a>
               </li>
             </ul>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </Container>
   );
 }
+
 export default Home2;

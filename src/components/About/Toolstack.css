@@ -1,18 +1,30 @@
 .tech-icons .icon-wrapper {
-    background: linear-gradient(135deg, #6e8efb, #7ac856);
-    padding: 15px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, background 0.3s ease;
-  }
-  
-  .tech-icons .icon-wrapper:hover {
-    transform: translateY(-10px);
-    background: linear-gradient(135deg, #a777e3, #f6d365);
-  }
-  
-  .tech-icons svg {
-    width: 50px;
-    height: 50px;
-    color: #fff;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 110px;
+  padding: 20px;
+  border: 1px solid #16324a;
+  border-radius: 8px;
+  background: rgba(10, 22, 37, 0.65);
+  transition: all 0.25s ease;
+}
+
+.tech-icons .icon-wrapper:hover {
+  border-color: rgba(0, 200, 245, 0.55);
+  background: rgba(13, 27, 42, 0.9);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 200, 245, 0.08);
+}
+
+.tech-icons .icon-wrapper svg {
+  width: 50px;
+  height: 50px;
+  color: #38bdf8;
+  transition: all 0.25s ease;
+}
+
+.tech-icons .icon-wrapper:hover svg {
+  color: #00c8f5;
+  filter: drop-shadow(0 0 8px rgba(0, 200, 245, 0.25));
+}
